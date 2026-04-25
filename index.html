@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nocturne Kingdom | Official Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4f86ff;
+            --primary-glow: rgba(79, 134, 255, 0.4);
+            --bg-dark: #05070a;
+            --bg-card: #0a101a;
+            --border: #1a2a44;
+            --text-main: #e0e0e0;
+            --text-dim: #a0a0a0;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Background Motif Mawar (Soft) */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(circle at 50% 50%, #0a1528 0%, #05070a 100%);
+            z-index: -1;
+        }
+
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 80px 20px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .crown-icon { font-size: 60px; filter: drop-shadow(0 0 15px var(--primary)); margin-bottom: 10px; }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--primary);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .tagline { color: var(--text-dim); font-style: italic; margin-top: 10px; }
+
+        /* Section Portofolio */
+        .section { margin: 50px 0; }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            border-left: 4px solid var(--primary);
+            padding-left: 15px;
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+        }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 25px;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .card:hover { border-color: var(--primary); transform: translateY(-5px); }
+
+        .card h3 { color: var(--primary); margin-bottom: 10px; }
+
+        /* Gudang Download */
+        .download-box {
+            background: linear-gradient(145deg, #0d1625, #05070a);
+            border: 2px solid var(--primary);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 0 30px var(--primary-glow);
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            padding: 20px 0;
+        }
+
+        .stat-item span { display: block; }
+        .stat-val { font-weight: bold; font-size: 1.2rem; }
+        .stat-label { font-size: 0.8rem; color: var(--text-dim); }
+
+        .btn-download {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 18px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            box-shadow: 0 5px 15px var(--primary-glow);
+            transition: 0.3s;
+        }
+
+        .btn-download:hover { transform: scale(1.05); box-shadow: 0 8px 25px var(--primary-glow); }
+
+        /* Tutorial */
+        .tutorial { font-size: 0.9rem; color: var(--text-dim); margin-top: 25px; text-align: left; max-width: 500px; margin-left: auto; margin-right: auto; }
+        .tutorial li { margin-bottom: 8px; }
+
+        footer { text-align: center; padding: 50px; color: #444; border-top: 1px solid var(--border); font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="crown-icon">👑</div>
+            <h1>Nocturne Kingdom</h1>
+            <p class="tagline">Gerbang Resmi Menuju Blue Rose Oath</p>
+        </header>
+
+        <section class="section">
+            <h2>Portofolio Aplikasi</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Sistem Kartu Sumpah</h3>
+                    <p>Akses eksklusif menggunakan kode unik dari Admin. Tanpa email ribet, cukup masukkan Username & Password kartu anda.</p>
+                </div>
+                <div class="card">
+                    <h3>Grimoire Digital</h3>
+                    <p>Database karakter terlengkap. Pantau statistik dan lore teman-temanmu secara realtime di dalam aplikasi.</p>
+                </div>
+                <div class="card">
+                    <h3>Notifikasi Kerajaan</h3>
+                    <p>Dapatkan pesan langsung (Push Notification) saat ada misi baru atau pengumuman darurat dari Admin.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="download-box">
+                <h2>Unduh Artefak Digital</h2>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-val">v1.0.0</span>
+                        <span class="stat-label">VERSI</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-val">Android</span>
+                        <span class="stat-label">PLATFORM</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-val">15 MB</span>
+                        <span class="stat-label">UKURAN</span>
+                    </div>
+                </div>
+
+                <p style="margin-bottom: 20px;">Klik tombol di bawah untuk mengunduh APK secara langsung ke perangkat anda.</p>
+                
+                <a href="nocturne.apk" download class="btn-download">INSTALL SEKARANG (.APK)</a>
+
+                <div class="tutorial">
+                    <strong>Panduan Instalasi:</strong>
+                    <ul>
+                        <li>Download file APK melalui tombol di atas.</li>
+                        <li>Jika muncul "Unknown Sources", aktifkan izin instalasi di pengaturan HP.</li>
+                        <li>Buka aplikasi dan gunakan Kartu Login anda.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            &copy; 2026 Evan's Studio - Nocturne Kingdom Project.
+        </footer>
+    </div>
+
+</body>
+</html>
